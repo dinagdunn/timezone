@@ -1,0 +1,14 @@
+button {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.selected {
+    background-color: yellow;
+}
+
+.clear{
+    background-color: #DDDDDD;
+}

@@ -1,0 +1,10 @@
+<h1>US Time Zone Display</h1>
+
+<button (click)="updateTimeZone('PST')" [ngClass]="{selected: lastclicked === 'PST'}">PST</button> <!--what is with this lastclicked==='pst'-->
+<button (click)="updateTimeZone('MST')" [ngClass]="{selected: lastclicked === 'MST'}">MST</button>
+<button (click)="updateTimeZone('CST')" [ngClass]="{selected: lastclicked === 'CST'}">CST</button>
+<button (click)="updateTimeZone('EST')" [ngClass]="{selected: lastclicked === 'EST'}">EST</button>
+<button (click)="updateTimeZone()" [ngClass]="{clear: lastclicked}">Clear</button>
+
+
+<h2>{{time | date: 'medium'}}</h2>
